@@ -1,0 +1,1135 @@
+Program.Sub.ScreenSU.Start
+Gui.FormSetup..Create
+Gui.FormSetup..Caption("Certification Setup")
+Gui.FormSetup..Size(8970,5970)
+Gui.FormSetup..MinX(0)
+Gui.FormSetup..MinY(0)
+Gui.FormSetup..Position(0,0)
+Gui.FormSetup..BackColor(-2147483633)
+Gui.FormSetup..MousePointer(0)
+Gui.FormSetup..Event(Resize,FormSetup_Resize)
+Gui.FormSetup..Event(UnLoad,FormSetup_UnLoad)
+Gui.FormSetup..MaxButton(False)
+Gui.FormSetup..Sizeable(False)
+Gui.FormSetup.frameFormInfo.Create(Frame)
+Gui.FormSetup.frameFormInfo.Size(3630,1920)
+Gui.FormSetup.frameFormInfo.Position(90,105)
+Gui.FormSetup.frameFormInfo.Caption("Form Information")
+Gui.FormSetup.lblFormID.Create(Label,"Form ID:",True,795,255,0,45,390,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblFormID.Parent("frameFormInfo")
+Gui.FormSetup.txtFormID.Create(TextBox,"",True,2010,300,0,1065,315,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtFormID.Locked(False)
+Gui.FormSetup.txtFormID.Parent("frameFormInfo")
+Gui.FormSetup.cmdFormID.Create(Button)
+Gui.FormSetup.cmdFormID.Size(375,375)
+Gui.FormSetup.cmdFormID.Position(3135,270)
+Gui.FormSetup.cmdFormID.Caption("^")
+Gui.FormSetup.cmdFormID.Event(Click,cmdFormID_Click)
+Gui.FormSetup.cmdFormID.Parent("frameFormInfo")
+Gui.FormSetup.lblFormName.Create(Label,"Form Name:",True,1020,255,0,45,750,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblFormName.Parent("frameFormInfo")
+Gui.FormSetup.txtFromName.Create(TextBox,"",True,2010,300,0,1065,675,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtFromName.Parent("frameFormInfo")
+Gui.FormSetup.txtFromName.MaxLength(50)
+Gui.FormSetup.txtUsrNts.Create(TextBox,"",True,2010,300,0,1065,1035,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtUsrNts.Parent("frameFormInfo")
+Gui.FormSetup.txtUsrNts.MaxLength(50)
+Gui.FormSetup.txtCRptName.Create(TextBox,"",True,2205,300,0,1230,1395,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtCRptName.Parent("frameFormInfo")
+Gui.FormSetup.txtCRptName.MaxLength(50)
+Gui.FormSetup.lblCRptName.Create(Label,"Crystal Report Name (.rpt):",True,1170,405,0,45,1470,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblCRptName.Parent("frameFormInfo")
+Gui.FormSetup.lblCRptName.ForeColor(0)
+Gui.FormSetup.lblUsrNts.Create(Label,"User Notes:",True,1020,255,0,45,1110,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblUsrNts.Parent("frameFormInfo")
+Gui.FormSetup.lblUsrNts.ForeColor(0)
+Gui.FormSetup.frameUF.Create(Frame)
+Gui.FormSetup.frameUF.Size(8625,2760)
+Gui.FormSetup.frameUF.Position(90,2190)
+Gui.FormSetup.frameUF.Caption("Additional Information")
+Gui.FormSetup.chkUF1.Create(CheckBox)
+Gui.FormSetup.chkUF1.Size(315,360)
+Gui.FormSetup.chkUF1.Position(180,525)
+Gui.FormSetup.chkUF1.Parent("frameUF")
+Gui.FormSetup.chkUF1.Alignment(2)
+Gui.FormSetup.chkUF1.Event(Click,chkUF1_Click)
+Gui.FormSetup.chkUF1.Enabled(False)
+Gui.FormSetup.lblReqd1.Create(Label,"Req'd",True,555,255,0,60,360,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblReqd1.Parent("frameUF")
+Gui.FormSetup.txtUF1.Create(TextBox,"",True,2010,300,0,1500,555,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtUF1.Parent("frameUF")
+Gui.FormSetup.txtUF1.MaxLength(50)
+Gui.FormSetup.lblUF1.Create(Label,"User Field 1:",True,1020,255,0,450,630,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblUF1.Parent("frameUF")
+Gui.FormSetup.lblName1.Create(Label,"Name",True,540,255,0,2130,360,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblName1.Parent("frameUF")
+Gui.FormSetup.txtUF2.Create(TextBox,"",True,2010,300,0,1500,915,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtUF2.Parent("frameUF")
+Gui.FormSetup.txtUF2.ForeColor(0)
+Gui.FormSetup.txtUF2.MaxLength(50)
+Gui.FormSetup.txtUF3.Create(TextBox,"",True,2010,300,0,1500,1275,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtUF3.Parent("frameUF")
+Gui.FormSetup.txtUF3.ForeColor(0)
+Gui.FormSetup.txtUF3.MaxLength(50)
+Gui.FormSetup.txtUF4.Create(TextBox,"",True,2010,300,0,1500,1635,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtUF4.Parent("frameUF")
+Gui.FormSetup.txtUF4.ForeColor(0)
+Gui.FormSetup.txtUF4.MaxLength(50)
+Gui.FormSetup.txtUF5.Create(TextBox,"",True,2010,300,0,1500,1995,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtUF5.Parent("frameUF")
+Gui.FormSetup.txtUF5.ForeColor(0)
+Gui.FormSetup.txtUF5.MaxLength(50)
+Gui.FormSetup.txtUF6.Create(TextBox,"",True,2010,300,0,1500,2355,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtUF6.Parent("frameUF")
+Gui.FormSetup.txtUF6.ForeColor(0)
+Gui.FormSetup.txtUF6.MaxLength(50)
+Gui.FormSetup.chkUF2.Create(CheckBox)
+Gui.FormSetup.chkUF2.Size(315,360)
+Gui.FormSetup.chkUF2.Position(180,885)
+Gui.FormSetup.chkUF2.Parent("frameUF")
+Gui.FormSetup.chkUF2.Alignment(2)
+Gui.FormSetup.chkUF2.BackColor(15790320)
+Gui.FormSetup.chkUF2.ForeColor(0)
+Gui.FormSetup.chkUF2.Event(Click,chkUF2_Click)
+Gui.FormSetup.chkUF2.Enabled(False)
+Gui.FormSetup.chkUF3.Create(CheckBox)
+Gui.FormSetup.chkUF3.Size(315,360)
+Gui.FormSetup.chkUF3.Position(180,1245)
+Gui.FormSetup.chkUF3.Parent("frameUF")
+Gui.FormSetup.chkUF3.Alignment(2)
+Gui.FormSetup.chkUF3.BackColor(15790320)
+Gui.FormSetup.chkUF3.ForeColor(0)
+Gui.FormSetup.chkUF3.Event(Click,chkUF3_Click)
+Gui.FormSetup.chkUF3.Enabled(False)
+Gui.FormSetup.chkUF4.Create(CheckBox)
+Gui.FormSetup.chkUF4.Size(315,360)
+Gui.FormSetup.chkUF4.Position(180,1605)
+Gui.FormSetup.chkUF4.Parent("frameUF")
+Gui.FormSetup.chkUF4.Alignment(2)
+Gui.FormSetup.chkUF4.BackColor(15790320)
+Gui.FormSetup.chkUF4.ForeColor(0)
+Gui.FormSetup.chkUF4.Event(Click,chkUF4_Click)
+Gui.FormSetup.chkUF4.Enabled(False)
+Gui.FormSetup.chkUF5.Create(CheckBox)
+Gui.FormSetup.chkUF5.Size(315,360)
+Gui.FormSetup.chkUF5.Position(180,1965)
+Gui.FormSetup.chkUF5.Parent("frameUF")
+Gui.FormSetup.chkUF5.Alignment(2)
+Gui.FormSetup.chkUF5.BackColor(15790320)
+Gui.FormSetup.chkUF5.ForeColor(0)
+Gui.FormSetup.chkUF5.Event(Click,chkUF5_Click)
+Gui.FormSetup.chkUF5.Enabled(False)
+Gui.FormSetup.chkUF6.Create(CheckBox)
+Gui.FormSetup.chkUF6.Size(315,360)
+Gui.FormSetup.chkUF6.Position(180,2325)
+Gui.FormSetup.chkUF6.Parent("frameUF")
+Gui.FormSetup.chkUF6.Alignment(2)
+Gui.FormSetup.chkUF6.BackColor(15790320)
+Gui.FormSetup.chkUF6.ForeColor(0)
+Gui.FormSetup.chkUF6.Event(Click,chkUF6_Click)
+Gui.FormSetup.chkUF6.Enabled(False)
+Gui.FormSetup.lblUF2.Create(Label,"User Field 2:",True,1020,255,0,450,990,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblUF2.Parent("frameUF")
+Gui.FormSetup.lblUF2.ForeColor(0)
+Gui.FormSetup.lblUF3.Create(Label,"User Field 3:",True,1020,255,0,450,1350,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblUF3.Parent("frameUF")
+Gui.FormSetup.lblUF3.ForeColor(0)
+Gui.FormSetup.lblUF4.Create(Label,"User Field 4:",True,1020,255,0,450,1710,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblUF4.Parent("frameUF")
+Gui.FormSetup.lblUF4.ForeColor(0)
+Gui.FormSetup.lblUF5.Create(Label,"User Field 5:",True,1020,255,0,450,2070,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblUF5.Parent("frameUF")
+Gui.FormSetup.lblUF5.ForeColor(0)
+Gui.FormSetup.lblUF6.Create(Label,"User Field 6:",True,1020,255,0,450,2430,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblUF6.Parent("frameUF")
+Gui.FormSetup.lblUF6.ForeColor(0)
+Gui.FormSetup.cmdUF1.Create(Button)
+Gui.FormSetup.cmdUF1.Size(675,345)
+Gui.FormSetup.cmdUF1.Position(3600,540)
+Gui.FormSetup.cmdUF1.Parent("frameUF")
+Gui.FormSetup.cmdUF1.Caption("Values")
+Gui.FormSetup.cmdUF1.Event(Click,cmdUF1_Click)
+Gui.FormSetup.cmdUF1.Enabled(False)
+Gui.FormSetup.cmdUF3.Create(Button)
+Gui.FormSetup.cmdUF3.Size(675,345)
+Gui.FormSetup.cmdUF3.Position(3600,1260)
+Gui.FormSetup.cmdUF3.Parent("frameUF")
+Gui.FormSetup.cmdUF3.Caption("Values")
+Gui.FormSetup.cmdUF3.Event(Click,cmdUF3_Click)
+Gui.FormSetup.cmdUF3.Enabled(False)
+Gui.FormSetup.cmdUF4.Create(Button)
+Gui.FormSetup.cmdUF4.Size(675,345)
+Gui.FormSetup.cmdUF4.Position(3600,1620)
+Gui.FormSetup.cmdUF4.Parent("frameUF")
+Gui.FormSetup.cmdUF4.Caption("Values")
+Gui.FormSetup.cmdUF4.Event(Click,cmdUF4_Click)
+Gui.FormSetup.cmdUF4.Enabled(False)
+Gui.FormSetup.cmdUF5.Create(Button)
+Gui.FormSetup.cmdUF5.Size(675,345)
+Gui.FormSetup.cmdUF5.Position(3600,1980)
+Gui.FormSetup.cmdUF5.Parent("frameUF")
+Gui.FormSetup.cmdUF5.Caption("Values")
+Gui.FormSetup.cmdUF5.Event(Click,cmdUF5_Click)
+Gui.FormSetup.cmdUF5.Enabled(False)
+Gui.FormSetup.cmdUF6.Create(Button)
+Gui.FormSetup.cmdUF6.Size(675,345)
+Gui.FormSetup.cmdUF6.Position(3600,2340)
+Gui.FormSetup.cmdUF6.Parent("frameUF")
+Gui.FormSetup.cmdUF6.Caption("Values")
+Gui.FormSetup.cmdUF6.Event(Click,cmdUF6_Click)
+Gui.FormSetup.cmdUF6.Enabled(False)
+Gui.FormSetup.cmdUF2.Create(Button)
+Gui.FormSetup.cmdUF2.Size(675,345)
+Gui.FormSetup.cmdUF2.Position(3600,900)
+Gui.FormSetup.cmdUF2.Parent("frameUF")
+Gui.FormSetup.cmdUF2.Caption("Values")
+Gui.FormSetup.cmdUF2.Event(Click,cmdUF2_Click)
+Gui.FormSetup.cmdUF2.Enabled(False)
+Gui.FormSetup.lbl3Reqd2.Create(Label,"Req'd",True,555,255,0,4290,360,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lbl3Reqd2.Parent("frameUF")
+Gui.FormSetup.lbl3Reqd2.ForeColor(0)
+Gui.FormSetup.chkUF7.Create(CheckBox)
+Gui.FormSetup.chkUF7.Size(315,360)
+Gui.FormSetup.chkUF7.Position(4410,525)
+Gui.FormSetup.chkUF7.Parent("frameUF")
+Gui.FormSetup.chkUF7.Alignment(2)
+Gui.FormSetup.chkUF7.BackColor(15790320)
+Gui.FormSetup.chkUF7.ForeColor(0)
+Gui.FormSetup.chkUF7.Event(Click,chkUF7_Click)
+Gui.FormSetup.chkUF7.Enabled(False)
+Gui.FormSetup.chkUF8.Create(CheckBox)
+Gui.FormSetup.chkUF8.Size(315,360)
+Gui.FormSetup.chkUF8.Position(4410,885)
+Gui.FormSetup.chkUF8.Parent("frameUF")
+Gui.FormSetup.chkUF8.Alignment(2)
+Gui.FormSetup.chkUF8.BackColor(15790320)
+Gui.FormSetup.chkUF8.ForeColor(0)
+Gui.FormSetup.chkUF8.Event(Click,chkUF8_Click)
+Gui.FormSetup.chkUF8.Enabled(False)
+Gui.FormSetup.chkUF9.Create(CheckBox)
+Gui.FormSetup.chkUF9.Size(315,360)
+Gui.FormSetup.chkUF9.Position(4410,1245)
+Gui.FormSetup.chkUF9.Parent("frameUF")
+Gui.FormSetup.chkUF9.Alignment(2)
+Gui.FormSetup.chkUF9.BackColor(15790320)
+Gui.FormSetup.chkUF9.ForeColor(0)
+Gui.FormSetup.chkUF9.Event(Click,chkUF9_Click)
+Gui.FormSetup.chkUF9.Enabled(False)
+Gui.FormSetup.chkUF10.Create(CheckBox)
+Gui.FormSetup.chkUF10.Size(315,360)
+Gui.FormSetup.chkUF10.Position(4410,1605)
+Gui.FormSetup.chkUF10.Parent("frameUF")
+Gui.FormSetup.chkUF10.Alignment(2)
+Gui.FormSetup.chkUF10.BackColor(15790320)
+Gui.FormSetup.chkUF10.ForeColor(0)
+Gui.FormSetup.chkUF10.Event(Click,chkUF10_Click)
+Gui.FormSetup.chkUF10.Enabled(False)
+Gui.FormSetup.chkUF11.Create(CheckBox)
+Gui.FormSetup.chkUF11.Size(315,360)
+Gui.FormSetup.chkUF11.Position(4410,1965)
+Gui.FormSetup.chkUF11.Parent("frameUF")
+Gui.FormSetup.chkUF11.Alignment(2)
+Gui.FormSetup.chkUF11.BackColor(15790320)
+Gui.FormSetup.chkUF11.ForeColor(0)
+Gui.FormSetup.chkUF11.Event(Click,chkUF11_Click)
+Gui.FormSetup.chkUF11.Enabled(False)
+Gui.FormSetup.chkUF12.Create(CheckBox)
+Gui.FormSetup.chkUF12.Size(315,360)
+Gui.FormSetup.chkUF12.Position(4410,2325)
+Gui.FormSetup.chkUF12.Parent("frameUF")
+Gui.FormSetup.chkUF12.Alignment(2)
+Gui.FormSetup.chkUF12.BackColor(15790320)
+Gui.FormSetup.chkUF12.ForeColor(0)
+Gui.FormSetup.chkUF12.Event(Click,chkUF12_Click)
+Gui.FormSetup.chkUF12.Enabled(False)
+Gui.FormSetup.lblUF7.Create(Label,"User Field 7:",True,1080,255,0,4680,630,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblUF7.Parent("frameUF")
+Gui.FormSetup.lblUF7.ForeColor(0)
+Gui.FormSetup.lblUF8.Create(Label,"User Field 8:",True,1080,255,0,4680,990,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblUF8.Parent("frameUF")
+Gui.FormSetup.lblUF8.ForeColor(0)
+Gui.FormSetup.lblUF9.Create(Label,"User Field 9:",True,1080,255,0,4680,1350,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblUF9.Parent("frameUF")
+Gui.FormSetup.lblUF9.ForeColor(0)
+Gui.FormSetup.lblUF10.Create(Label,"User Field 10:",True,1080,255,0,4680,1710,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblUF10.Parent("frameUF")
+Gui.FormSetup.lblUF10.ForeColor(0)
+Gui.FormSetup.lblUF11.Create(Label,"User Field 11:",True,1080,255,0,4680,2070,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblUF11.Parent("frameUF")
+Gui.FormSetup.lblUF11.ForeColor(0)
+Gui.FormSetup.lblUF12.Create(Label,"User Field 12:",True,1080,255,0,4680,2430,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblUF12.Parent("frameUF")
+Gui.FormSetup.lblUF12.ForeColor(0)
+Gui.FormSetup.txtUF7.Create(TextBox,"",True,2010,300,0,5820,555,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtUF7.Parent("frameUF")
+Gui.FormSetup.txtUF7.ForeColor(0)
+Gui.FormSetup.txtUF7.MaxLength(50)
+Gui.FormSetup.txtUF8.Create(TextBox,"",True,2010,300,0,5820,915,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtUF8.Parent("frameUF")
+Gui.FormSetup.txtUF8.ForeColor(0)
+Gui.FormSetup.txtUF8.MaxLength(50)
+Gui.FormSetup.txtUF9.Create(TextBox,"",True,2010,300,0,5820,1275,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtUF9.Parent("frameUF")
+Gui.FormSetup.txtUF9.ForeColor(0)
+Gui.FormSetup.txtUF9.MaxLength(50)
+Gui.FormSetup.txtUF10.Create(TextBox,"",True,2010,300,0,5820,1635,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtUF10.Parent("frameUF")
+Gui.FormSetup.txtUF10.ForeColor(0)
+Gui.FormSetup.txtUF10.MaxLength(50)
+Gui.FormSetup.txtUF11.Create(TextBox,"",True,2010,300,0,5820,1995,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtUF11.Parent("frameUF")
+Gui.FormSetup.txtUF11.ForeColor(0)
+Gui.FormSetup.txtUF11.MaxLength(50)
+Gui.FormSetup.txtUF12.Create(TextBox,"",True,2010,300,0,5820,2355,False,0,"Arial",8,-2147483643,1)
+Gui.FormSetup.txtUF12.Parent("frameUF")
+Gui.FormSetup.txtUF12.ForeColor(0)
+Gui.FormSetup.txtUF12.MaxLength(50)
+Gui.FormSetup.cmdUF7.Create(Button)
+Gui.FormSetup.cmdUF7.Size(675,345)
+Gui.FormSetup.cmdUF7.Position(7920,540)
+Gui.FormSetup.cmdUF7.Parent("frameUF")
+Gui.FormSetup.cmdUF7.Caption("Values")
+Gui.FormSetup.cmdUF7.Event(Click,cmdUF7_Click)
+Gui.FormSetup.cmdUF7.Enabled(False)
+Gui.FormSetup.cmdUF8.Create(Button)
+Gui.FormSetup.cmdUF8.Size(675,345)
+Gui.FormSetup.cmdUF8.Position(7920,900)
+Gui.FormSetup.cmdUF8.Parent("frameUF")
+Gui.FormSetup.cmdUF8.Caption("Values")
+Gui.FormSetup.cmdUF8.Event(Click,cmdUF8_Click)
+Gui.FormSetup.cmdUF8.Enabled(False)
+Gui.FormSetup.cmdUF9.Create(Button)
+Gui.FormSetup.cmdUF9.Size(675,345)
+Gui.FormSetup.cmdUF9.Position(7920,1260)
+Gui.FormSetup.cmdUF9.Parent("frameUF")
+Gui.FormSetup.cmdUF9.Caption("Values")
+Gui.FormSetup.cmdUF9.Event(Click,cmdUF9_Click)
+Gui.FormSetup.cmdUF9.Enabled(False)
+Gui.FormSetup.cmdUF10.Create(Button)
+Gui.FormSetup.cmdUF10.Size(675,345)
+Gui.FormSetup.cmdUF10.Position(7920,1620)
+Gui.FormSetup.cmdUF10.Parent("frameUF")
+Gui.FormSetup.cmdUF10.Caption("Values")
+Gui.FormSetup.cmdUF10.Event(Click,cmdUF10_Click)
+Gui.FormSetup.cmdUF10.Enabled(False)
+Gui.FormSetup.cmdUF11.Create(Button)
+Gui.FormSetup.cmdUF11.Size(675,345)
+Gui.FormSetup.cmdUF11.Position(7920,1980)
+Gui.FormSetup.cmdUF11.Parent("frameUF")
+Gui.FormSetup.cmdUF11.Caption("Values")
+Gui.FormSetup.cmdUF11.Event(Click,cmdUF11_Click)
+Gui.FormSetup.cmdUF11.Enabled(False)
+Gui.FormSetup.cmdUF12.Create(Button)
+Gui.FormSetup.cmdUF12.Size(675,345)
+Gui.FormSetup.cmdUF12.Position(7920,2340)
+Gui.FormSetup.cmdUF12.Parent("frameUF")
+Gui.FormSetup.cmdUF12.Caption("Values")
+Gui.FormSetup.cmdUF12.Event(Click,cmdUF12_Click)
+Gui.FormSetup.cmdUF12.Enabled(False)
+Gui.FormSetup.lblName2.Create(Label,"Name",True,540,255,0,6240,360,True,0,"Arial",8,-2147483633,0)
+Gui.FormSetup.lblName2.Parent("frameUF")
+Gui.FormSetup.lblName2.ForeColor(0)
+Gui.FormSetup.cmdSave.Create(Button)
+Gui.FormSetup.cmdSave.Size(855,375)
+Gui.FormSetup.cmdSave.Position(1050,4995)
+Gui.FormSetup.cmdSave.Caption("Save")
+Gui.FormSetup.cmdSave.Event(Click,cmdSave_Click)
+Gui.FormSetup.cmdNew.Create(Button)
+Gui.FormSetup.cmdNew.Size(855,375)
+Gui.FormSetup.cmdNew.Position(90,4995)
+Gui.FormSetup.cmdNew.Caption("New")
+Gui.FormSetup.cmdNew.Event(Click,cmdNew_Click)
+Gui.FormValues..Create
+Gui.FormValues..Caption("***Values***")
+Gui.FormValues..Size(5850,7335)
+Gui.FormValues..MinX(0)
+Gui.FormValues..MinY(0)
+Gui.FormValues..Position(0,0)
+Gui.FormValues..BackColor(-2147483633)
+Gui.FormValues..MousePointer(0)
+Gui.FormValues..Event(UnLoad,FormValues_UnLoad)
+Gui.FormValues..ControlBox(True)
+Gui.FormValues..MaxButton(False)
+Gui.FormValues..MinButton(False)
+Gui.FormValues..Sizeable(False)
+Gui.FormValues.GsGCVal.Create(GsGridControl)
+Gui.FormValues.GsGCVal.Size(5400,6045)
+Gui.FormValues.GsGCVal.Position(120,180)
+Gui.FormValues.GsGCVal.Event(RowCellClick,GsGCVal_RowCellClick)
+Gui.FormValues.cmdClear.Create(Button)
+Gui.FormValues.cmdClear.Size(855,375)
+Gui.FormValues.cmdClear.Position(150,6315)
+Gui.FormValues.cmdClear.Caption("Clear")
+Gui.FormValues.cmdClear.Event(Click,cmdClearVal_Click)
+Gui.FormValues.cmdSave.Create(Button)
+Gui.FormValues.cmdSave.Size(855,375)
+Gui.FormValues.cmdSave.Position(1185,6315)
+Gui.FormValues.cmdSave.Caption("Save")
+Gui.FormValues.cmdSave.Event(Click,cmdSaveVal_Click)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+	Variable.Global.iFormID.Declare(Long,0)
+	Variable.Global.iUFID.Declare(Long,0)
+	Variable.Global.bNew.Declare(Boolean,False)
+	Variable.Global.bSaveButton.Declare(Boolean,True)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+	'Customer: K&B Industries
+	'Created by: AV
+	'This is going to be used for setup
+	
+	V.Local.sIcon.Declare(String)
+	
+	F.ODBC.Connection!con.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+	
+	F.Intrinsic.String.Build("{0}\gss.ico",V.Caller.InstallDir,V.Local.sIcon)
+	Gui.FormSetup..Icon(V.Local.sIcon)
+	
+	Gui.FormSetup..Show
+Program.Sub.Main.End
+
+Program.Sub.FormSetup_UnLoad.Start
+V.Local.iRet.Declare(Long)
+
+F.Intrinsic.Control.If(V.Global.iFormID,<>,0)
+	F.Intrinsic.UI.Msgbox("Do you want to save before exiting?","Save",4,V.Local.iRet)
+	F.Intrinsic.Control.If(V.Local.iRet,=,6)
+		V.Global.bSaveButton.Set(True)
+		F.Intrinsic.Control.CallSub(cmdsave_click)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+F.ODBC.Connection!con.Close
+F.Intrinsic.Control.End
+
+Program.Sub.FormSetup_UnLoad.End
+
+Program.Sub.FormSetup_Resize.Start
+Program.Sub.FormSetup_Resize.End
+
+Program.Sub.cmdFormID_Click.Start
+	V.Local.sRet.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.sTitles.Declare(String)
+	V.Local.sWidths.Declare(String)
+	V.Local.iCnt.Declare(Long)
+	
+	F.Intrinsic.String.Split("Form ID*!*Form Name","*!*",V.Local.sTitles)
+	F.Intrinsic.String.Split("1000*!*2000","*!*",V.Local.sWidths)
+	F.Intrinsic.UI.Browser("Form ID","con","SELECT ID, FORM_NAME FROM GAB_3908_UF_FORMS ORDER BY ID;",V.Local.sTitles,V.Local.sWidths,V.Local.sRet)
+	F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+		F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+		V.Global.iFormID.Set(V.Local.sRet(0))
+		F.Intrinsic.String.Build("SELECT * FROM GAB_3908_UF_FORMS WHERE ID = '{0}';",V.Global.iFormID,V.Local.sSQL)
+		F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Local.sRet)
+		F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+		Gui.FormSetup.txtFormID.Text(V.Local.sRet(0))
+		Gui.FormSetup.txtFromName.Text(V.Local.sRet(1))
+		Gui.FormSetup.txtFromName.Enabled(True)
+		Gui.FormSetup.txtUsrNts.Text(V.Local.sRet(2))
+		Gui.FormSetup.txtUsrNts.Enabled(True)
+		Gui.FormSetup.txtCRptName.Text(V.Local.sRet(3))
+		Gui.FormSetup.txtCRptName.Enabled(True)
+		
+		F.Intrinsic.Control.For(V.Local.iCnt,1,12,1)
+			Gui.FormSetup.chkUF[V.Local.iCnt].Enabled(True)
+		F.Intrinsic.Control.Next(V.Local.iCnt)
+		
+		F.Intrinsic.Control.CallSub(validatecheckboxes)
+	F.Intrinsic.Control.EndIf
+Program.Sub.cmdFormID_Click.End
+
+Program.Sub.cmdSave_Click.Start
+	V.Local.iRet.Declare(Long)
+	V.Local.sSQL.Declare(String)
+	V.Local.sRpt.Declare(String)
+	
+	V.Global.iFormID.Set(V.Screen.FormSetup!txtFormID.Text)
+
+	F.Intrinsic.Control.If(V.Screen.FormSetup!txtFormID.Text,=,0)
+		F.Intrinsic.UI.Msgbox("Form ID is empty.","Validate Form ID")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.Else
+		F.ODBC.Connection!con.OpenRecordsetRW("rstNames","SELECT * FROM GAB_3908_UF_NAMES;")
+		F.ODBC.Connection!con.OpenRecordsetRW("rstForm","SELECT * FROM GAB_3908_UF_FORMS;")
+		F.Intrinsic.Control.If(V.ODBC.con!rstForm.EOF,=,True)
+			F.Intrinsic.Control.AndIf(V.Screen.FormSetup!txtFormID.Text,=,"1")
+			F.Intrinsic.UI.Msgbox("Form ID 1 is reserved to be your default form. Is this your default form?","Form Validation",4,V.Local.iRet)
+			F.Intrinsic.Control.If(V.Local.iRet,=,6)
+				F.ODBC.con!rstForm.AddNew
+					F.ODBC.con!rstForm.Set!ID(V.Screen.FormSetup!txtFormID.Text)
+					F.ODBC.con!rstForm.Set!FORM_NAME(V.Screen.FormSetup!txtFromName.Text)
+					F.ODBC.con!rstForm.Set!USER_NOTES(V.Screen.FormSetup!txtUsrNts.Text)
+					F.Intrinsic.String.Right(V.Screen.FormSetup!txtCRptName.Text,4,V.Local.sRpt)
+					F.Intrinsic.Control.If(V.Local.sRpt.LCase,<>,".rpt")
+						F.Intrinsic.String.Build("{0}.rpt",V.Screen.FormSetup!txtCRptName.Text,V.Local.sRpt)
+						F.ODBC.con!rstForm.Set!CRYSTAL_RPT_NAME(V.Local.sRpt)
+						Gui.FormSetup.txtCRptName.Text(V.Local.sRpt)
+					F.Intrinsic.Control.Else
+						F.ODBC.con!rstForm.Set!CRYSTAL_RPT_NAME(V.Screen.FormSetup!txtCRptName.Text)
+					F.Intrinsic.Control.EndIf
+				F.ODBC.con!rstForm.Update
+				F.Intrinsic.Control.CallSub(validatecheckboxessave)
+				V.Global.bNew.Set(False)
+			F.Intrinsic.Control.Else
+				F.ODBC.con!rstForm.Close
+				F.ODBC.con!rstNames.Close
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.ElseIf(V.Global.bNew,=,True)
+			F.ODBC.con!rstForm.AddNew
+				F.ODBC.con!rstForm.Set!ID(V.Screen.FormSetup!txtFormID.Text)
+				F.ODBC.con!rstForm.Set!FORM_NAME(V.Screen.FormSetup!txtFromName.Text)
+				F.ODBC.con!rstForm.Set!USER_NOTES(V.Screen.FormSetup!txtUsrNts.Text)
+				F.Intrinsic.String.Right(V.Screen.FormSetup!txtCRptName.Text,4,V.Local.sRpt)
+				F.Intrinsic.Control.If(V.Local.sRpt.LCase,<>,".rpt")
+					F.Intrinsic.String.Build("{0}.rpt",V.Screen.FormSetup!txtCRptName.Text,V.Local.sRpt)
+					F.ODBC.con!rstForm.Set!CRYSTAL_RPT_NAME(V.Local.sRpt)
+					Gui.FormSetup.txtCRptName.Text(V.Local.sRpt)
+				F.Intrinsic.Control.Else
+					F.ODBC.con!rstForm.Set!CRYSTAL_RPT_NAME(V.Screen.FormSetup!txtCRptName.Text)
+				F.Intrinsic.Control.EndIf
+			F.ODBC.con!rstForm.Update
+			F.Intrinsic.Control.CallSub(validatecheckboxessave)
+			V.Global.bNew.Set(False)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Build("DELETE FROM GAB_3908_UF_FORMS WHERE ID = {0};",V.Global.iFormID,V.Local.sSQL)
+			F.ODBC.Connection!con.Execute(V.Local.sSQL)
+			F.ODBC.con!rstForm.AddNew
+				F.ODBC.con!rstForm.Set!ID(V.Screen.FormSetup!txtFormID.Text)
+				F.ODBC.con!rstForm.Set!FORM_NAME(V.Screen.FormSetup!txtFromName.Text)
+				F.ODBC.con!rstForm.Set!USER_NOTES(V.Screen.FormSetup!txtUsrNts.Text)
+				F.Intrinsic.String.Right(V.Screen.FormSetup!txtCRptName.Text,4,V.Local.sRpt)
+				F.Intrinsic.Control.If(V.Local.sRpt.LCase,<>,".rpt")
+					F.Intrinsic.String.Build("{0}.rpt",V.Screen.FormSetup!txtCRptName.Text,V.Local.sRpt)
+					F.ODBC.con!rstForm.Set!CRYSTAL_RPT_NAME(V.Local.sRpt)
+					Gui.FormSetup.txtCRptName.Text(V.Local.sRpt)
+				F.Intrinsic.Control.Else
+					F.ODBC.con!rstForm.Set!CRYSTAL_RPT_NAME(V.Screen.FormSetup!txtCRptName.Text)
+				F.Intrinsic.Control.EndIf
+			F.ODBC.con!rstForm.Update
+			F.Intrinsic.Control.CallSub(validatecheckboxessave)
+			V.Global.bNew.Set(False)
+		F.Intrinsic.Control.EndIf
+		
+		F.Intrinsic.Control.If(V.Global.bSaveButton,=,True)
+			F.Intrinsic.UI.Msgbox("Save Complete","Save")
+			V.Global.bSaveButton.Set(True)
+		F.Intrinsic.Control.EndIf
+		
+		F.ODBC.con!rstForm.Close
+		F.ODBC.con!rstNames.Close
+	F.Intrinsic.Control.EndIf
+	
+Program.Sub.cmdSave_Click.End
+
+Program.Sub.chkUF1_Click.Start
+	F.Intrinsic.Control.If(V.Screen.FormSetup!chkUF1.Value,=,1)
+		Gui.FormSetup.txtUF1.Enabled(True)
+		Gui.FormSetup.cmdUF1.Enabled(True)
+	F.Intrinsic.Control.Else
+		Gui.FormSetup.txtUF1.Text("")
+		Gui.FormSetup.txtUF1.Enabled(False)
+		Gui.FormSetup.cmdUF1.Enabled(False)
+	F.Intrinsic.Control.EndIf
+	
+Program.Sub.chkUF1_Click.End
+
+Program.Sub.chkUF2_Click.Start
+	F.Intrinsic.Control.If(V.Screen.FormSetup!chkUF2.Value,=,1)
+		Gui.FormSetup.txtUF2.Enabled(True)
+		Gui.FormSetup.cmdUF2.Enabled(True)
+	F.Intrinsic.Control.Else
+		Gui.FormSetup.txtUF2.Text("")
+		Gui.FormSetup.txtUF2.Enabled(False)
+		Gui.FormSetup.cmdUF2.Enabled(False)
+	F.Intrinsic.Control.EndIf
+Program.Sub.chkUF2_Click.End
+
+Program.Sub.chkUF3_Click.Start
+	F.Intrinsic.Control.If(V.Screen.FormSetup!chkUF3.Value,=,1)
+		Gui.FormSetup.txtUF3.Enabled(True)
+		Gui.FormSetup.cmdUF3.Enabled(True)
+	F.Intrinsic.Control.Else
+		Gui.FormSetup.txtUF3.Text("")
+		Gui.FormSetup.txtUF3.Enabled(False)
+		Gui.FormSetup.cmdUF3.Enabled(False)
+	F.Intrinsic.Control.EndIf
+Program.Sub.chkUF3_Click.End
+
+Program.Sub.chkUF4_Click.Start
+	F.Intrinsic.Control.If(V.Screen.FormSetup!chkUF4.Value,=,1)
+		Gui.FormSetup.txtUF4.Enabled(True)
+		Gui.FormSetup.cmdUF4.Enabled(True)
+	F.Intrinsic.Control.Else
+		Gui.FormSetup.txtUF4.Text("")
+		Gui.FormSetup.txtUF4.Enabled(False)
+		Gui.FormSetup.cmdUF4.Enabled(False)
+	F.Intrinsic.Control.EndIf
+Program.Sub.chkUF4_Click.End
+
+Program.Sub.chkUF5_Click.Start
+	F.Intrinsic.Control.If(V.Screen.FormSetup!chkUF5.Value,=,1)
+		Gui.FormSetup.txtUF5.Enabled(True)
+		Gui.FormSetup.cmdUF5.Enabled(True)
+	F.Intrinsic.Control.Else
+		Gui.FormSetup.txtUF5.Text("")
+		Gui.FormSetup.txtUF5.Enabled(False)
+		Gui.FormSetup.cmdUF5.Enabled(False)
+	F.Intrinsic.Control.EndIf
+Program.Sub.chkUF5_Click.End
+
+Program.Sub.chkUF6_Click.Start
+	F.Intrinsic.Control.If(V.Screen.FormSetup!chkUF6.Value,=,1)
+		Gui.FormSetup.txtUF6.Enabled(True)
+		Gui.FormSetup.cmdUF6.Enabled(True)
+	F.Intrinsic.Control.Else
+		Gui.FormSetup.txtUF6.Text("")
+		Gui.FormSetup.txtUF6.Enabled(False)
+		Gui.FormSetup.cmdUF6.Enabled(False)
+	F.Intrinsic.Control.EndIf
+Program.Sub.chkUF6_Click.End
+
+Program.Sub.chkUF7_Click.Start
+	F.Intrinsic.Control.If(V.Screen.FormSetup!chkUF7.Value,=,1)
+		Gui.FormSetup.txtUF7.Enabled(True)
+		Gui.FormSetup.cmdUF7.Enabled(True)
+	F.Intrinsic.Control.Else
+		Gui.FormSetup.txtUF7.Text("")
+		Gui.FormSetup.txtUF7.Enabled(False)
+		Gui.FormSetup.cmdUF7.Enabled(False)
+	F.Intrinsic.Control.EndIf
+Program.Sub.chkUF7_Click.End
+
+Program.Sub.chkUF8_Click.Start
+	F.Intrinsic.Control.If(V.Screen.FormSetup!chkUF8.Value,=,1)
+		Gui.FormSetup.txtUF8.Enabled(True)
+		Gui.FormSetup.cmdUF8.Enabled(True)
+	F.Intrinsic.Control.Else
+		Gui.FormSetup.txtUF8.Text("")
+		Gui.FormSetup.txtUF8.Enabled(False)
+		Gui.FormSetup.cmdUF8.Enabled(False)
+	F.Intrinsic.Control.EndIf
+Program.Sub.chkUF8_Click.End
+
+Program.Sub.chkUF9_Click.Start
+	F.Intrinsic.Control.If(V.Screen.FormSetup!chkUF9.Value,=,1)
+		Gui.FormSetup.txtUF9.Enabled(True)
+		Gui.FormSetup.cmdUF9.Enabled(True)
+	F.Intrinsic.Control.Else
+		Gui.FormSetup.txtUF9.Text("")
+		Gui.FormSetup.txtUF9.Enabled(False)
+		Gui.FormSetup.cmdUF9.Enabled(False)
+	F.Intrinsic.Control.EndIf
+Program.Sub.chkUF9_Click.End
+
+Program.Sub.chkUF10_Click.Start
+	F.Intrinsic.Control.If(V.Screen.FormSetup!chkUF10.Value,=,1)
+		Gui.FormSetup.txtUF10.Enabled(True)
+		Gui.FormSetup.cmdUF10.Enabled(True)
+	F.Intrinsic.Control.Else
+		Gui.FormSetup.txtUF10.Text("")
+		Gui.FormSetup.txtUF10.Enabled(False)
+		Gui.FormSetup.cmdUF10.Enabled(False)
+	F.Intrinsic.Control.EndIf
+Program.Sub.chkUF10_Click.End
+
+Program.Sub.chkUF11_Click.Start
+	F.Intrinsic.Control.If(V.Screen.FormSetup!chkUF11.Value,=,1)
+		Gui.FormSetup.txtUF11.Enabled(True)
+		Gui.FormSetup.cmdUF11.Enabled(True)
+	F.Intrinsic.Control.Else
+		Gui.FormSetup.txtUF11.Text("")
+		Gui.FormSetup.txtUF11.Enabled(False)
+		Gui.FormSetup.cmdUF11.Enabled(False)
+	F.Intrinsic.Control.EndIf
+Program.Sub.chkUF11_Click.End
+
+Program.Sub.chkUF12_Click.Start
+	F.Intrinsic.Control.If(V.Screen.FormSetup!chkUF12.Value,=,1)
+		Gui.FormSetup.txtUF12.Enabled(True)
+		Gui.FormSetup.cmdUF12.Enabled(True)
+	F.Intrinsic.Control.Else
+		Gui.FormSetup.txtUF12.Text("")
+		Gui.FormSetup.txtUF12.Enabled(False)
+		Gui.FormSetup.cmdUF12.Enabled(False)
+	F.Intrinsic.Control.EndIf
+Program.Sub.chkUF12_Click.End
+
+Program.Sub.cmdUF1_Click.Start
+	V.Local.sCaption.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.iRet.Declare(Long)
+	
+	V.Global.iUFID.Set(1)
+	
+	V.Global.bSaveButton.Set(False)
+	F.Intrinsic.Control.CallSub(cmdsave_click)
+	
+	F.Intrinsic.Control.If(V.Screen.FormSetup!txtUF1.Text,<>,"")
+		Gui.FormValues..Caption(V.Screen.FormSetup!txtUF1.Text)
+	F.Intrinsic.Control.Else
+		Gui.FormValues..Caption("User Field 1")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub(datatablegsgcvalues)
+
+	Gui.FormValues..Show
+Program.Sub.cmdUF1_Click.End
+
+Program.Sub.cmdUF2_Click.Start
+	V.Local.sCaption.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.iRet.Declare(Long)
+	
+	V.Global.iUFID.Set(2)
+	
+	V.Global.bSaveButton.Set(False)
+	F.Intrinsic.Control.CallSub(cmdsave_click)
+	
+	F.Intrinsic.Control.If(V.Screen.FormSetup!txtUF2.Text,<>,"")
+		Gui.FormValues..Caption(V.Screen.FormSetup!txtUF2.Text)
+	F.Intrinsic.Control.Else
+		Gui.FormValues..Caption("User Field 2")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub(datatablegsgcvalues)
+
+	Gui.FormValues..Show
+Program.Sub.cmdUF2_Click.End
+
+Program.Sub.cmdUF3_Click.Start
+	V.Local.sCaption.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.iRet.Declare(Long)
+	
+	V.Global.iUFID.Set(3)
+	
+	V.Global.bSaveButton.Set(False)
+	F.Intrinsic.Control.CallSub(cmdsave_click)
+	
+	F.Intrinsic.Control.If(V.Screen.FormSetup!txtUF3.Text,<>,"")
+		Gui.FormValues..Caption(V.Screen.FormSetup!txtUF3.Text)
+	F.Intrinsic.Control.Else
+		Gui.FormValues..Caption("User Field 3")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub(datatablegsgcvalues)
+
+	Gui.FormValues..Show
+Program.Sub.cmdUF3_Click.End
+
+Program.Sub.cmdUF4_Click.Start
+	V.Local.sCaption.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.iRet.Declare(Long)
+	
+	V.Global.iUFID.Set(4)
+	
+	V.Global.bSaveButton.Set(False)
+	F.Intrinsic.Control.CallSub(cmdsave_click)
+	
+	F.Intrinsic.Control.If(V.Screen.FormSetup!txtUF4.Text,<>,"")
+		Gui.FormValues..Caption(V.Screen.FormSetup!txtUF4.Text)
+	F.Intrinsic.Control.Else
+		Gui.FormValues..Caption("User Field 4")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub(datatablegsgcvalues)
+
+	Gui.FormValues..Show
+Program.Sub.cmdUF4_Click.End
+
+Program.Sub.cmdUF5_Click.Start
+	V.Local.sCaption.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.iRet.Declare(Long)
+	
+	V.Global.iUFID.Set(5)
+	
+	V.Global.bSaveButton.Set(False)
+	F.Intrinsic.Control.CallSub(cmdsave_click)
+	
+	F.Intrinsic.Control.If(V.Screen.FormSetup!txtUF5.Text,<>,"")
+		Gui.FormValues..Caption(V.Screen.FormSetup!txtUF5.Text)
+	F.Intrinsic.Control.Else
+		Gui.FormValues..Caption("User Field 5")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub(datatablegsgcvalues)
+
+	Gui.FormValues..Show
+Program.Sub.cmdUF5_Click.End
+
+Program.Sub.cmdUF6_Click.Start
+	V.Local.sCaption.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.iRet.Declare(Long)
+	
+	V.Global.iUFID.Set(6)
+	
+	V.Global.bSaveButton.Set(False)
+	F.Intrinsic.Control.CallSub(cmdsave_click)
+	
+	F.Intrinsic.Control.If(V.Screen.FormSetup!txtUF6.Text,<>,"")
+		Gui.FormValues..Caption(V.Screen.FormSetup!txtUF6.Text)
+	F.Intrinsic.Control.Else
+		Gui.FormValues..Caption("User Field 6")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub(datatablegsgcvalues)
+
+	Gui.FormValues..Show
+Program.Sub.cmdUF6_Click.End
+
+Program.Sub.cmdUF7_Click.Start
+	V.Local.sCaption.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.iRet.Declare(Long)
+	
+	V.Global.iUFID.Set(7)
+	
+	V.Global.bSaveButton.Set(False)
+	F.Intrinsic.Control.CallSub(cmdsave_click)
+	
+	F.Intrinsic.Control.If(V.Screen.FormSetup!txtUF7.Text,<>,"")
+		Gui.FormValues..Caption(V.Screen.FormSetup!txtUF7.Text)
+	F.Intrinsic.Control.Else
+		Gui.FormValues..Caption("User Field 7")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub(datatablegsgcvalues)
+
+	Gui.FormValues..Show
+Program.Sub.cmdUF7_Click.End
+
+Program.Sub.cmdUF8_Click.Start
+	V.Local.sCaption.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.iRet.Declare(Long)
+	
+	V.Global.iUFID.Set(8)
+	
+	V.Global.bSaveButton.Set(False)
+	F.Intrinsic.Control.CallSub(cmdsave_click)
+	
+	F.Intrinsic.Control.If(V.Screen.FormSetup!txtUF8.Text,<>,"")
+		Gui.FormValues..Caption(V.Screen.FormSetup!txtUF8.Text)
+	F.Intrinsic.Control.Else
+		Gui.FormValues..Caption("User Field 8")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub(datatablegsgcvalues)
+
+	Gui.FormValues..Show
+Program.Sub.cmdUF8_Click.End
+
+Program.Sub.cmdUF9_Click.Start
+	V.Local.sCaption.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.iRet.Declare(Long)
+	
+	V.Global.iUFID.Set(9)
+	
+	V.Global.bSaveButton.Set(False)
+	F.Intrinsic.Control.CallSub(cmdsave_click)
+	
+	F.Intrinsic.Control.If(V.Screen.FormSetup!txtUF9.Text,<>,"")
+		Gui.FormValues..Caption(V.Screen.FormSetup!txtUF9.Text)
+	F.Intrinsic.Control.Else
+		Gui.FormValues..Caption("User Field 9")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub(datatablegsgcvalues)
+
+	Gui.FormValues..Show
+Program.Sub.cmdUF9_Click.End
+
+Program.Sub.cmdUF10_Click.Start
+	V.Local.sCaption.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.iRet.Declare(Long)
+	
+	V.Global.iUFID.Set(10)
+	
+	V.Global.bSaveButton.Set(False)
+	F.Intrinsic.Control.CallSub(cmdsave_click)
+	
+	F.Intrinsic.Control.If(V.Screen.FormSetup!txtUF10.Text,<>,"")
+		Gui.FormValues..Caption(V.Screen.FormSetup!txtUF10.Text)
+	F.Intrinsic.Control.Else
+		Gui.FormValues..Caption("User Field 10")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub(datatablegsgcvalues)
+
+	Gui.FormValues..Show
+Program.Sub.cmdUF10_Click.End
+
+Program.Sub.cmdUF11_Click.Start
+	V.Local.sCaption.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.iRet.Declare(Long)
+	
+	V.Global.iUFID.Set(11)
+	
+	V.Global.bSaveButton.Set(False)
+	F.Intrinsic.Control.CallSub(cmdsave_click)
+	
+	F.Intrinsic.Control.If(V.Screen.FormSetup!txtUF11.Text,<>,"")
+		Gui.FormValues..Caption(V.Screen.FormSetup!txtUF11.Text)
+	F.Intrinsic.Control.Else
+		Gui.FormValues..Caption("User Field 11")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub(datatablegsgcvalues)
+
+	Gui.FormValues..Show
+Program.Sub.cmdUF11_Click.End
+
+Program.Sub.cmdUF12_Click.Start
+	V.Local.sCaption.Declare(String)
+	V.Local.sSQL.Declare(String)
+	V.Local.iRet.Declare(Long)
+	
+	V.Global.iUFID.Set(12)
+	
+	V.Global.bSaveButton.Set(False)
+	F.Intrinsic.Control.CallSub(cmdsave_click)
+	
+	F.Intrinsic.Control.If(V.Screen.FormSetup!txtUF12.Text,<>,"")
+		Gui.FormValues..Caption(V.Screen.FormSetup!txtUF12.Text)
+	F.Intrinsic.Control.Else
+		Gui.FormValues..Caption("User Field 12")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub(datatablegsgcvalues)
+
+	Gui.FormValues..Show
+Program.Sub.cmdUF12_Click.End
+
+Program.Sub.cmdNew_Click.Start
+	V.Local.iRet.Declare(Long)
+	V.Local.sRet.Declare(String)
+	V.Local.iCnt.Declare(Long)
+	
+	F.Intrinsic.Control.If(V.Global.bNew,=,True)
+		F.Intrinsic.UI.Msgbox("Do you want to save first?","Save",4,V.Local.iRet)
+		F.Intrinsic.Control.If(V.Local.iRet,=,6)
+			F.Intrinsic.Control.CallSub(cmdsave_click)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub(clearform)
+	F.ODBC.Connection!con.ExecuteAndReturn("SELECT TOP 1 ID FROM GAB_3908_UF_FORMS ORDER BY ID DESC;",V.Local.iRet)
+	F.Intrinsic.Math.Add(V.Local.iRet,1,V.Local.iRet)
+	Gui.FormSetup.txtFormID.Text(V.Local.iRet)
+
+	F.Intrinsic.Control.For(V.Local.iCnt,1,12,1)
+		Gui.FormSetup.chkUF[V.Local.iCnt].Enabled(True)
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+
+	V.Global.bNew.Set(True)
+		
+Program.Sub.cmdNew_Click.End
+
+Program.Sub.ClearForm.Start
+	Gui.FormSetup.txtFromName.Text("")
+	Gui.FormSetup.txtFromName.Enabled(True)
+	Gui.FormSetup.txtUsrNts.Text("")
+	Gui.FormSetup.txtUsrNts.Enabled(True)
+	Gui.FormSetup.txtCRptName.Text("")
+	Gui.FormSetup.txtCRptName.Enabled(True)
+	Gui.FormSetup.chkUF1.Value(0)
+	Gui.FormSetup.txtUF1.Text("")
+	Gui.FormSetup.txtUF1.Enabled(False)
+	Gui.FormSetup.cmdUF1.Enabled(False)
+	Gui.FormSetup.chkUF2.Value(0)
+	Gui.FormSetup.txtUF2.Text("")
+	Gui.FormSetup.txtUF2.Enabled(False)
+	Gui.FormSetup.cmdUF2.Enabled(False)
+	Gui.FormSetup.chkUF3.Value(0)
+	Gui.FormSetup.txtUF3.Text("")
+	Gui.FormSetup.txtUF3.Enabled(False)
+	Gui.FormSetup.cmdUF3.Enabled(False)
+	Gui.FormSetup.chkUF4.Value(0)
+	Gui.FormSetup.txtUF4.Text("")
+	Gui.FormSetup.txtUF4.Enabled(False)
+	Gui.FormSetup.cmdUF4.Enabled(False)
+	Gui.FormSetup.chkUF5.Value(0)
+	Gui.FormSetup.txtUF5.Text("")
+	Gui.FormSetup.txtUF5.Enabled(False)
+	Gui.FormSetup.cmdUF5.Enabled(False)
+	Gui.FormSetup.chkUF6.Value(0)
+	Gui.FormSetup.txtUF6.Text("")
+	Gui.FormSetup.txtUF6.Enabled(False)
+	Gui.FormSetup.cmdUF6.Enabled(False)
+	Gui.FormSetup.chkUF7.Value(0)
+	Gui.FormSetup.txtUF7.Text("")
+	Gui.FormSetup.txtUF7.Enabled(False)
+	Gui.FormSetup.cmdUF7.Enabled(False)
+	Gui.FormSetup.chkUF8.Value(0)
+	Gui.FormSetup.txtUF8.Text("")
+	Gui.FormSetup.txtUF8.Enabled(False)
+	Gui.FormSetup.cmdUF8.Enabled(False)
+	Gui.FormSetup.chkUF9.Value(0)
+	Gui.FormSetup.txtUF9.Text("")
+	Gui.FormSetup.txtUF9.Enabled(False)
+	Gui.FormSetup.cmdUF9.Enabled(False)
+	Gui.FormSetup.chkUF10.Value(0)
+	Gui.FormSetup.txtUF10.Text("")
+	Gui.FormSetup.txtUF10.Enabled(False)
+	Gui.FormSetup.cmdUF10.Enabled(False)
+	Gui.FormSetup.chkUF11.Value(0)
+	Gui.FormSetup.txtUF11.Text("")
+	Gui.FormSetup.txtUF11.Enabled(False)
+	Gui.FormSetup.cmdUF11.Enabled(False)
+	Gui.FormSetup.chkUF12.Value(0)
+	Gui.FormSetup.txtUF12.Text("")
+	Gui.FormSetup.txtUF12.Enabled(False)
+	Gui.FormSetup.cmdUF12.Enabled(False)
+Program.Sub.ClearForm.End
+
+Program.Sub.ValidateCheckboxes.Start
+	V.Local.sSQL.Declare(String)
+	V.Local.sRet.Declare(String)
+	V.Local.iCnt.Declare(Long,0)
+	
+	F.Intrinsic.String.Build("SELECT * FROM GAB_3908_UF_NAMES WHERE FORM_ID = {0} ORDER BY ID;",V.Global.iFormID,V.Local.sSQL)
+	F.ODBC.Connection!con.OpenRecordsetRO("rstNames",V.Local.sSQL)
+	F.Intrinsic.Control.DoUntil(V.ODBC.con!rstNames.EOF,=,True)
+		F.Intrinsic.Math.Add(V.Local.iCnt,1,V.Local.iCnt)
+		F.Intrinsic.Control.If(V.ODBC.con!rstNames.FieldVal!REQUIRED,=,True)
+			Gui.FormSetup.chkUF[V.Local.iCnt].Value(1)
+			Gui.FormSetup.txtUF[V.Local.iCnt].Text(V.ODBC.con!rstNames.FieldValTrim!NAME)
+		F.Intrinsic.Control.Else
+			Gui.FormSetup.chkUF[V.Local.iCnt].Value(0)
+		F.Intrinsic.Control.EndIf
+	F.ODBC.con!rstNames.MoveNext
+	F.Intrinsic.Control.Loop
+	F.ODBC.con!rstNames.Close
+		
+Program.Sub.ValidateCheckboxes.End
+
+Program.Sub.ValidateCheckboxesSave.Start
+	V.Local.sSQL.Declare(String)
+	V.Local.sRet.Declare(String)
+	V.Local.iCnt.Declare(Long,1)
+	
+	F.Intrinsic.String.Build("DELETE FROM GAB_3908_UF_NAMES WHERE FORM_ID = {0};",V.Global.iFormID,V.Local.sSQL)
+	F.ODBC.Connection!con.Execute(V.Local.sSQL)
+	F.ODBC.Connection!con.OpenRecordsetRW("rstNames2","SELECT * FROM GAB_3908_UF_NAMES;")
+	F.Intrinsic.Control.For(V.Local.iCnt,1,12,1)
+		F.Intrinsic.Control.If(V.Screen.FormSetup!chkUF[V.Local.iCnt].Value,=,0)
+			F.ODBC.con!rstNames2.AddNew
+			F.ODBC.con!rstNames2.Set!ID(V.Local.iCnt)
+			F.ODBC.con!rstNames2.Set!FORM_ID(V.Global.iFormID)
+			F.ODBC.con!rstNames2.Set!NAME(V.Screen.FormSetup!txtUF[V.Local.iCnt].Text)
+			F.ODBC.con!rstNames2.Set!REQUIRED(0)
+			F.ODBC.con!rstNames2.Update
+		F.Intrinsic.Control.Else
+			F.ODBC.con!rstNames2.AddNew
+			F.ODBC.con!rstNames2.Set!ID(V.Local.iCnt)
+			F.ODBC.con!rstNames2.Set!FORM_ID(V.Global.iFormID)
+			F.ODBC.con!rstNames2.Set!NAME(V.Screen.FormSetup!txtUF[V.Local.iCnt].Text)
+			F.ODBC.con!rstNames2.Set!REQUIRED(1)
+			F.ODBC.con!rstNames2.Update
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	F.ODBC.con!rstNames2.Close
+Program.Sub.ValidateCheckboxesSave.End
+
+Program.Sub.FormValues_UnLoad.Start
+	Gui.FormValues..Visible(False)
+	
+Program.Sub.FormValues_UnLoad.End
+
+Program.Sub.cmdClearVal_Click.Start
+	V.Local.iRet.Declare(Long)
+	
+	F.Intrinsic.UI.Msgbox("This is going to remove all values, do you want to continue?","Clear Check",4,V.Local.iRet)
+	F.Intrinsic.Control.If(V.Local.iRet,=,6)
+		Gui.FormValues.GsGCVal.ClearRows("Values")
+'		Gui.FormValues.GsGCVal.AddRow("Values","*!*Add*!*Delete")
+		Gui.FormValues.GsGCVal.AddRow("Values","*!*Add")
+	F.Intrinsic.Control.EndIf
+Program.Sub.cmdClearVal_Click.End
+
+Program.Sub.cmdSaveVal_Click.Start
+	V.Local.iCnt.Declare(Long)
+	V.Local.sSQL.Declare(String)
+
+	F.Intrinsic.String.Build("DELETE FROM GAB_3908_UF_VALUES WHERE FORM_ID = {0} AND UF_ID = {1};",V.Global.iFormID,V.Global.iUFID,V.Local.sSQL)
+	F.ODBC.Connection!con.Execute(V.Local.sSQL)
+	F.ODBC.Connection!con.OpenRecordsetRW("rstValues","SELECT * FROM GAB_3908_UF_VALUES;")
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtValues.RowCount--,1)
+		F.ODBC.con!rstValues.AddNew
+			F.ODBC.con!rstValues.Set!ID(V.Local.iCnt)
+			F.ODBC.con!rstValues.Set!FORM_ID(V.Global.iFormID)
+			F.ODBC.con!rstValues.Set!UF_ID(V.Global.iUFID)
+			F.ODBC.con!rstValues.Set!VALUE(V.DataTable.dtValues(V.Local.iCnt).Value!FieldValTrim)
+		F.ODBC.con!rstValues.Update
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	F.ODBC.con!rstValues.Close
+	F.ODBC.Connection!con.Execute("DELETE FROM GAB_3908_UF_VALUES WHERE VALUE = '';")
+	F.Intrinsic.UI.Msgbox("Values Saved","Save")
+Program.Sub.cmdSaveVal_Click.End
+
+Program.Sub.GsGCVal_RowCellClick.Start
+	F.Intrinsic.Control.If(V.Args.CellValue,=,"Add")
+'		Gui.FormValues.GsGCVal.AddRow("Values","*!*Add*!*Delete")
+		Gui.FormValues.GsGCVal.AddRow("Values","*!*Add")
+'	F.Intrinsic.Control.ElseIf(V.Args.CellValue,=,"Delete")
+'		Gui.FormValues.GsGCVal.AddRow("Values","*!*Add*!*Delete")
+	F.Intrinsic.Control.EndIf
+		
+Program.Sub.GsGCVal_RowCellClick.End
+
+Program.Sub.DataTableGsGCValues.Start
+	V.Local.sSQL.Declare(String)
+	
+	F.Intrinsic.Control.If(V.DataTable.dtValues.Exists,=,True)
+		F.Data.DataTable.Close("dtValues")
+	F.Intrinsic.Control.EndIf	
+	
+	F.Intrinsic.String.Build("SELECT VALUE FROM GAB_3908_UF_VALUES WHERE FORM_ID = {0} AND UF_ID = {1} ORDER BY FORM_ID,UF_ID,ID;",V.Global.iFormID,V.Global.iUFID,V.Local.sSQL)
+	F.Data.DataTable.CreateFromSQL("dtValues","con",V.Local.sSQL,True)
+	F.Data.DataTable.AddColumn("dtValues","Add","String")
+'	F.Data.DataTable.AddColumn("dtValues","Delete","String")
+	F.Data.DataTable.SetValue("dtValues",-1,"Add","Add")
+'	F.Data.DataTable.SetValue("dtValues",-1,"Add","Add","Delete","Delete")
+	Gui.FormValues.GsGCVal.AddGridViewFromDataTable("Values","dtValues")
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","VALUE","Caption","Values")
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","VALUE","ReadOnly",False)
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","VALUE","AllowEdit",True)
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","VALUE","AllowSort",False)
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","VALUE","AllowSize",False)
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","VALUE","AllowMove",False)
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","VALUE","Width",500)
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Add","Caption","")
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Add","ShowCaption",False)
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Add","ReadOnly",True)
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Add","AllowEdit",False)
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Add","AllowSort",False)
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Add","AllowSize",False)
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Add","AllowMove",False)
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Add","CellHAlignment","Center")
+	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Add","CellBackColor","Gray")
+'	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Delete","Caption","")
+'	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Delete","ShowCaption",False)
+'	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Delete","ReadOnly",True)
+'	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Delete","AllowEdit",False)
+'	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Delete","AllowSort",False)
+'	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Delete","AllowSize",False)
+'	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Delete","AllowMove",False)
+'	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Delete","CellHAlignment","Center")
+'	Gui.FormValues.GsGCVal.SetColumnProperty("Values","Delete","CellBackColor","Gray")
+'	Gui.FormValues.GsGCVal.AddRow("Values","*!*Add*!*Delete")
+	Gui.FormValues.GsGCVal.AddRow("Values","*!*Add")
+	Gui.FormValues.GsGCVal.MainView("Values")
+Program.Sub.DataTableGsGCValues.End
+
+Program.Sub.Comments.Start
+${$0$}$GAB_3908_WO_Ship_Setup.g2u$}$SUPERVSR$}$05/04/2016 1:46:07 PM$}$False
+Program.Sub.Comments.End
